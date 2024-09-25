@@ -2,12 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./styles/App.css";
 import App from "./components/App";
-import { Provider } from "react-redux";
-import { store } from "./app/store";
 
 ReactDOM.render(
-  <Provider store={store}>
+  <React.StrictMode>
     <App />
-  </Provider>,
+  </React.StrictMode>,
   document.getElementById("root")
 );

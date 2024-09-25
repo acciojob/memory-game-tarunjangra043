@@ -1,31 +1,12 @@
-.levels_container {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
+body {
+  font-family: Arial, sans-serif;
 }
 
-.cells_container {
-  display: grid;
-  grid-template-columns: repeat(4, 100px);
-  gap: 10px;
+.landing-page {
+  text-align: center;
+  margin-top: 50px;
 }
 
-.cell {
-  width: 100px;
-  height: 100px;
-  background-color: lightgray;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  font-size: 24px;
-}
-
-.cell.selected {
-  background-color: lightgreen;
-}
-
-.game-status {
-  margin-top: 20px;
-  font-size: 18px;
+.levels_container label {
+  margin-right: 15px;
 }

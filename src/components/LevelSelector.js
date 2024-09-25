@@ -1,40 +1,19 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { setLevel } from "../features/memoryGameSlice";
 
-export const LevelSelector = () => {
-  const dispatch = useDispatch();
-  const currentLevel = useSelector((state) => state.memoryGame.level);
-
+const LevelSelector = () => {
   return (
     <div className="levels_container">
       <label>
-        <input
-          type="radio"
-          id="easy"
-          checked={currentLevel === "easy"}
-          onChange={() => dispatch(setLevel("easy"))}
-        />
-        Easy
+        <input type="radio" id="easy" name="level" /> Easy
       </label>
       <label>
-        <input
-          type="radio"
-          id="normal"
-          checked={currentLevel === "medium"}
-          onChange={() => dispatch(setLevel("medium"))}
-        />
-        Medium
+        <input type="radio" id="normal" name="level" /> Medium
       </label>
       <label>
-        <input
-          type="radio"
-          id="hard"
-          checked={currentLevel === "hard"}
-          onChange={() => dispatch(setLevel("hard"))}
-        />
-        Hard
+        <input type="radio" id="hard" name="level" /> Hard
       </label>
     </div>
   );
 };
+
+export default LevelSelector;
