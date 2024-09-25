@@ -2,7 +2,7 @@ import React from "react";
 
 const Levels = ({ setLevel }) => {
   const handleLevelChange = (event) => {
-    setLevel(event.target.value); // Set the selected level based on the radio button value
+    setLevel(event.target.value);
   };
 
   return (
