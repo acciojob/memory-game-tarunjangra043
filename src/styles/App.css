@@ -1,12 +1,30 @@
-body {
-  font-family: Arial, sans-serif;
+.levels_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
-.landing-page {
+.cells_container {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  font-size: 24px;
   text-align: center;
-  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
-.levels_container label {
-  margin-right: 15px;
+button {
+  padding: 10px;
+  font-size: 16px;
 }

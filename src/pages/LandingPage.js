@@ -1,22 +1,36 @@
 import React from "react";
 
-const LandingPage = () => {
-  return (
-    <div className="landing-page">
-      <h1>Welcome!</h1>
-      <div className="levels_container">
-        <label>
-          <input type="radio" id="easy" name="level" /> Easy
-        </label>
-        <label>
-          <input type="radio" id="normal" name="level" /> Medium
-        </label>
-        <label>
-          <input type="radio" id="hard" name="level" /> Hard
-        </label>
-      </div>
-    </div>
-  );
-};
+const LandingPage = ({ setLevel }) => (
+  <div className="levels_container">
+    <h1>Select a Difficulty Level</h1>
+    <label>
+      <input
+        type="radio"
+        id="easy"
+        name="level"
+        onClick={() => setLevel("easy")}
+      />
+      Easy
+    </label>
+    <label>
+      <input
+        type="radio"
+        id="normal"
+        name="level"
+        onClick={() => setLevel("medium")}
+      />
+      Medium
+    </label>
+    <label>
+      <input
+        type="radio"
+        id="hard"
+        name="level"
+        onClick={() => setLevel("hard")}
+      />
+      Hard
+    </label>
+  </div>
+);
 
 export default LandingPage;

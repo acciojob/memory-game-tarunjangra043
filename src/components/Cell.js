@@ -1,9 +1,9 @@
 import React from "react";
 
-export const Cell = ({ number, selected, onClick }) => {
-  return (
-    <div className={`cell ${selected ? "selected" : ""}`} onClick={onClick}>
-      {selected ? number : "?"}
-    </div>
-  );
-};
+const Cell = ({ value, onClick }) => (
+  <button className="cell" onClick={onClick}>
+    {value}
+  </button>
+);
+
+export default Cell;
